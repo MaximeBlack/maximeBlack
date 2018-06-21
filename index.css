@@ -1,0 +1,67 @@
+@font-face 
+{
+	font-family: "Bodoni";
+	src: url('fonts/Bodoni/Bodoni.otf');
+}
+
+body 
+{
+	height: 100vh;
+	background-image: url('media/index/fond_index.png');
+	color: white;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+
+.full-logo
+{
+	width : 60%;
+	margin: 10% auto;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.logo
+{
+	width: 30%;
+	margin: 0 auto;
+}
+
+.langues
+{
+	width : 30%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#img_logo
+{
+	width: 40%;
+}
+
+#nom
+{
+	width: 80%;
+}
+
+.full-logo p
+{
+	border-top: red 2px solid;
+	padding-top: 3%;
+}
+
+.langues p 
+{
+	border-bottom: red 2px solid;
+	padding-bottom: 3%;
+	font-size: 25px;
+	font-family: "Bodoni";
+}
+
+.langues img 
+{
+	width: 10%;
+	display: inline-block;
+	padding: 0 1%;
+}

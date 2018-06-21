@@ -1,0 +1,286 @@
+@font-face 
+{
+	font-family: "Bodoni";
+	src: url('fonts/Bodoni/Bodoni.otf');
+}
+
+@font-face 
+{
+	font-family: "Ecolier";
+	src: url('fonts/ecolier/ec.TTF');
+}
+
+*
+{
+	margin: 0;
+	padding: 0;
+}
+
+body
+{
+	width: 60%;
+	margin: 5% auto 20% auto;
+	height: 70%;
+
+}
+
+a
+{
+	text-decoration: none;
+	color: black;
+}
+
+li 
+{
+	list-style-type: none;
+}
+
+header
+{
+	text-align: center;
+
+}
+
+.full-logo
+{
+	width : 20%;
+	float: right;
+}
+
+.full-logo p
+{
+	text-transform: uppercase;
+	font-size: 8px;
+	font-weight: bold;
+	margin-top: 8%;
+}
+
+.logo
+{
+	border-bottom: #1a5724 1px solid;
+
+}
+
+nav ul 
+{
+	padding-top: 90px;
+}
+
+.menu 
+{
+	color: black;
+	text-transform: uppercase;
+	margin: 1% 0;
+
+}
+
+.menu:hover
+{
+	color: #1a5724;
+}
+
+.fond
+{
+	background-size: cover;
+	width : 100%;
+	height: 400px;
+}
+
+.less_nav 
+{
+	width: 80%;
+	float: right;
+	height: 400px;
+}
+
+.maison
+{
+	width: 40%;
+}
+
+.nom
+{
+	width: 90%;
+	margin-top: 4%;
+	margin-bottom: 2%;
+}
+
+.collection
+{
+	width: 70%;
+	margin-top: 90px;
+	height: 77.5%;
+}
+
+.instagram
+{
+	width: 70%;
+	margin-top: 90px;
+	height: 77.5%;
+}
+
+.histoire-img
+{
+	width: 70%;
+	margin-top: 90px;
+	height: 77.5%;
+}
+
+.univers
+{
+	width: 70%;
+	margin-top: 90px;
+	height: 77.5%;
+	animation: anim 10s infinite;
+}
+
+
+@keyframes anim 
+{
+	0%
+	{
+		opacity: 0;
+	}
+	60%
+	{
+		opacity: 1;
+	}
+	100%
+	{
+		opacity: 0;
+	}
+}
+
+
+
+.dots
+{
+	position: absolute;
+	left: 49%;
+	top: 54%;
+	transform: translate(-50%, 0%);
+}
+
+.badge
+{
+	color: #FFF;
+	background-color: #1a5724;
+	height: 7px;
+	width: 7px;
+	border: 1px #FFF solid;	
+	display: inline-block;
+	border-radius: 50%;
+}
+
+.white
+{
+	background-color: #FFF;
+	color: #FFF;
+}
+
+
+.display
+{
+	color: #FFF;
+	border: none;
+	background: none;
+	display: inline-block;
+	padding: 10px 5px;
+	font-size: 20px;
+	vertical-align: middle;
+	overflow: hidden;
+	text-decoration: none;
+	text-align: center;
+	cursor: pointer;
+	white-space: nowrap;
+}
+
+.left
+{
+	position: absolute;
+	top: 39%;
+	left: 32%;
+	transform: translate(0%, -50%);
+}
+
+.right
+{
+	position: absolute;
+	top: 39%;
+	left: 64.4%;
+	transform: translate(0%, -50%);
+}
+
+main
+{
+	margin: 2% 0 3% 15%;
+	display: block;
+	bottom: 0px;
+
+}
+
+.histoire
+{
+	color: #333;
+	font-family: "Fjor One";
+	margin: 3% 0 0 6%;
+	width : 65%;
+	padding-top: 0;
+
+	
+}
+
+.first 
+{
+	display: inline-block;
+	padding-top: 2%; 
+	color: #1a5724;
+	font-family: "Ecolier";
+	font-style: italic;
+	font-size: 30px;
+}
+
+.second 
+{
+	display: inline-block;
+	padding-top: 2%;
+	margin-left: 1%;  
+	color: #1a5724;
+	font-family: "Arial";
+	font-size: 10px;
+	
+}
+
+.footer
+{
+	display: inline;
+	font-size: 12px;
+	margin: 0 1%;
+
+}
+
+.ul-footer
+{
+	margin: 0 auto;
+	width: 80%;
+	padding : 2% 0 ;
+}
+
+footer
+{
+	height : 10%;
+	border-top: #1a5724 1px solid ; 
+}
+
+.sticky-footer
+{
+	height: 500px;
+}
+
+@media(max-width: 900px)
+{
+	body
+	{
+		width: 90%;
+	}
+}

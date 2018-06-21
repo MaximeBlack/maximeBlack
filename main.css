@@ -10,6 +10,11 @@
 	src: url('fonts/ecolier/ec.TTF');
 }
 
+html
+{
+	height: 100%;
+}
+
 *
 {
 	margin: 0;

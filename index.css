@@ -4,9 +4,13 @@
 	src: url('fonts/Bodoni/Bodoni.otf');
 }
 
+html
+{
+	height: 100%;
+}
+
 body 
 {
-	height: 100vh;
 	background-image: url('media/index/fond_index.png');
 	color: white;
 	background-repeat: no-repeat;

@@ -32,10 +32,23 @@ function showDivs(n, classe) {
     dots[slideIndex-1].className += " white";
 }
 
+var myIndex = 0;
 
-function carousel() {
+function carousel(classe) {
     var i;
-    var x = document.getElementsByClassName("univers");
+    if(classe == 1)
+    {
+        var x = document.getElementsByClassName("univers");
+    }
+    else if(classe == 2)
+    {
+        var x = document.getElementsByClassName("menu");
+    }
+    else
+    {
+        var x = document.getElementsByClassName("histoire-img");
+    }
+
     for (i = 0; i < x.length; i++) {
        x[i].style.display = "none";  
     }

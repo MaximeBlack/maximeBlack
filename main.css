@@ -115,7 +115,18 @@ nav ul
 	width: 70%;
 	margin-top: 90px;
 	height: 77.5%;
+	object-fit: cover;
 }
+
+.menu-img
+{
+	width: 70%;
+	margin-top: 90px;
+	height: 77.5%;
+	object-fit: cover;
+	animation: anim 10s infinite;
+} 
+
 
 .instagram
 {
@@ -129,6 +140,8 @@ nav ul
 	width: 70%;
 	margin-top: 90px;
 	height: 77.5%;
+	object-fit: cover;
+	animation: anim 10s infinite;
 }
 
 .univers
@@ -137,6 +150,7 @@ nav ul
 	margin-top: 90px;
 	height: 77.5%;
 	animation: anim 10s infinite;
+	object-fit: cover;
 }
 
 

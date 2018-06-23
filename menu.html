@@ -6,7 +6,6 @@
 <html>
 	<head>
 		<title>Maxime Black</title>
-		<script type="text/javascript" src="slide.js"></script>
 		<link rel="stylesheet" type="text/css" href="main.css">
 	</head>
 
@@ -29,22 +28,28 @@
 						 <p>Vêtements pour hommes</p>
 					</div>
 				</header>
-				<img class= "collection" src="media/menu/menu1.png">
-				<img class= "collection" src="media/menu/menu2.png" style="display:none;">
-				<img class= "collection" src="media/menu/menu3.png" style="display:none;">
-				<img class= "collection" src="media/menu/menu4.png" style="display:none;">
-				<img class= "collection" src="media/menu/menu5.png" style="display:none;">
-				<img class= "collection" src="media/menu/menu6.png" style="display:none;">
-				<button class="display left" onclick="plusDivs(-1,0)">&#10094;</button>
-				<button class="display right" onclick="plusDivs(+1,0)">&#10095;</button>
-				<div class = "dots">
-					<span class="badge white" onclick="currentDiv(1,0)"></span>
-	   				<span class="badge" onclick="currentDiv(2,0)"></span>
-	    			<span class="badge" onclick="currentDiv(3,0)"></span>
-	    			<span class="badge" onclick="currentDiv(4,0)"></span>
-	    			<span class="badge" onclick="currentDiv(5,0)"></span>
-	    			<span class="badge" onclick="currentDiv(6,0)"></span>
-				</div>
+				<img class= "menu-img" src="media/menu/menu1.png">
+				<img class= "menu-img" src="media/menu/menu2.png" style="display:none;">
+				<img class= "menu-img" src="media/menu/menu3.png" style="display:none;">
+				<img class= "menu-img" src="media/menu/menu4.png" style="display:none;">
+				<img class= "menu-img" src="media/menu/menu5.png" style="display:none;">
+				<img class= "menu-img" src="media/menu/menu6.png" style="display:none;">
+				<script type="text/javascript">
+					var myIndex = 0;
+					carousel();
+
+					function carousel() {
+					    var i;
+					    var x = document.getElementsByClassName("menu-img");
+					    for (i = 0; i < x.length; i++) {
+					       x[i].style.display = "none";  
+					    }
+					    myIndex++;
+					    if (myIndex > x.length) {myIndex = 1}    
+					    x[myIndex-1].style.display = "block";  
+					    setTimeout(carousel, 9000);    
+					}
+				</script>
 			</div>
 		
 			<style>
@@ -58,7 +63,6 @@
 			      	color: #1a5724; 
 			      }";
 			    ?>
-	    
 	 		</style>
 
 			<nav>
@@ -77,6 +81,7 @@
 			<p class="first">Maxime Black embellit le moyen.</p>
 			<p class="second">AVERAGE</p>
 		</main>
+
 
 		<footer>
 			<ul class = "ul-footer">

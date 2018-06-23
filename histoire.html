@@ -6,7 +6,6 @@
 <html>
 	<head>
 		<title>Maxime Black</title>
-		<script type="text/javascript" src="slide.js"></script>
 		<link rel="stylesheet" type="text/css" href="main.css">
 	</head>
 
@@ -30,16 +29,25 @@
 					</div>
 				</header>
 
-				<img class= "histoire-img" src="media/histoire/histoire_1.png">
-				<img class= "histoire-img" src="media/histoire/histoire_2.jpg" style="display: none;">
-				<img class= "histoire-img" src="media/histoire/histoire_3.jpg" style="display: none;">
-				<button class="display left" onclick="plusDivs(-1,1)">&#10094;</button>
-				<button class="display right" onclick="plusDivs(+1,1)">&#10095;</button>
-				<div class = "dots">
-					<span class="badge white" onclick="currentDiv(1,1)"></span>
-	   				<span class="badge" onclick="currentDiv(2,1)"></span>
-	    			<span class="badge" onclick="currentDiv(3,1)"></span>
-				</div>
+					<img class= "histoire-img" src="media/histoire/histoire_1.png">
+					<img class= "histoire-img" src="media/histoire/histoire_2.jpg" style="display: none;">
+					<img class= "histoire-img" src="media/histoire/histoire_3.jpg" style="display: none;">
+				<script type="text/javascript">
+					var myIndex = 0;
+					carousel();
+
+					function carousel() {
+					    var i;
+					    var x = document.getElementsByClassName("histoire-img");
+					    for (i = 0; i < x.length; i++) {
+					       x[i].style.display = "none";  
+					    }
+					    myIndex++;
+					    if (myIndex > x.length) {myIndex = 1}    
+					    x[myIndex-1].style.display = "block";  
+					    setTimeout(carousel, 9000);    
+					}
+				</script>
 			</div>
 
 			<style>
@@ -74,7 +82,6 @@
 
 			<p class='histoire'>Notre but est de rendre hommage à un fragment important de la société qui n’est pas représenté dans la mode et l’art. Nous sommes fiers de nos racines et de cet héritage que nous cherchons à mettre sur le devant de la scène à travers la mode. Nous adoptons une approche simple et honnête, basée sur notre vécu, nos souvenirs d’enfance et notre vie de tous les jours. Nous faisons abstraction des barrières élitistes qui font abstraction de cette riche culture que nous avons tous côtoyé.</p>
 		</main>
-
 
 		<footer>
 			<ul class = "ul-footer">

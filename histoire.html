@@ -28,26 +28,27 @@
 					 	<p>Vêtements pour hommes</p>
 					</div>
 				</header>
-
+				<div class="diapo">
 					<img class= "histoire-img" src="media/histoire/histoire_1.png">
 					<img class= "histoire-img" src="media/histoire/histoire_2.jpg" style="display: none;">
 					<img class= "histoire-img" src="media/histoire/histoire_3.jpg" style="display: none;">
-				<script type="text/javascript">
-					var myIndex = 0;
-					carousel();
+					<script type="text/javascript">
+						var myIndex = 0;
+						carousel();
 
-					function carousel() {
-					    var i;
-					    var x = document.getElementsByClassName("histoire-img");
-					    for (i = 0; i < x.length; i++) {
-					       x[i].style.display = "none";  
-					    }
-					    myIndex++;
-					    if (myIndex > x.length) {myIndex = 1}    
-					    x[myIndex-1].style.display = "block";  
-					    setTimeout(carousel, 9000);    
-					}
-				</script>
+						function carousel() {
+						    var i;
+						    var x = document.getElementsByClassName("histoire-img");
+						    for (i = 0; i < x.length; i++) {
+						       x[i].style.display = "none";  
+						    }
+						    myIndex++;
+						    if (myIndex > x.length) {myIndex = 1}    
+						    x[myIndex-1].style.display = "block";  
+						    setTimeout(carousel, 9000);    
+						}
+					</script>
+				</div>
 			</div>
 
 			<style>

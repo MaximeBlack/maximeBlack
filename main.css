@@ -112,20 +112,33 @@ nav ul
 
 .collection
 {
-	width: 70%;
-	margin-top: 90px;
-	height: 77.5%;
+	height: 100%;
 	object-fit: cover;
+	animation: anim 10s infinite;
+	margin: 0% auto;
 }
 
 .menu-img
 {
-	width: 70%;
-	margin-top: 90px;
-	height: 77.5%;
+	height: 100%;
 	object-fit: cover;
 	animation: anim 10s infinite;
 } 
+
+
+.diapo
+{
+	width: 70%;
+	margin-top: 90px;
+	height: 77.5%;
+}
+
+.diapo-collection
+{
+	width: 70%;
+	margin-top: 70px;
+	height: 95%;
+}
 
 
 .instagram
@@ -137,18 +150,14 @@ nav ul
 
 .histoire-img
 {
-	width: 70%;
-	margin-top: 90px;
-	height: 77.5%;
+	height: 100%;
 	object-fit: cover;
 	animation: anim 10s infinite;
 }
 
 .univers
 {
-	width: 70%;
-	margin-top: 90px;
-	height: 77.5%;
+	height: 100%;
 	animation: anim 10s infinite;
 	object-fit: cover;
 }

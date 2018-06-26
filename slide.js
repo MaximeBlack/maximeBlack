@@ -1,35 +1,23 @@
 var slideIndex = 1;
-showDivs(slideIndex,1);
+showDivs(slideIndex);
 
-function plusDivs(n, classe) {
+function plusDivs(n) {
     showDivs(slideIndex += n , classe);
 }
 
-function currentDiv(n, classe) {
+function currentDiv(n) {
   showDivs(slideIndex = n, classe);
 }
 
-function showDivs(n, classe) {
+function showDivs(n) {
     var i;
-    if(classe == 0)
-    {
-        var x = document.getElementsByClassName("collection");
-    }
-    else
-    {
-        var x = document.getElementsByClassName("histoire-img");
-    }
-    var dots = document.getElementsByClassName("badge");
+    var x = document.getElementsByClassName("collection");
     if (n > x.length) {slideIndex = 1} 
     if (n < 1) {slideIndex = x.length} ;
     for (i = 0; i < x.length; i++) {
         x[i].style.display = "none"; 
     }
-    for (i = 0; i < dots.length; i++) {
-     dots[i].className = dots[i].className.replace("white", "");
-  	}
-    x[slideIndex-1].style.display = "block"; 
-    dots[slideIndex-1].className += " white";
+    x[slideIndex-1].style.display = "block";
 }
 
 var myIndex = 0;

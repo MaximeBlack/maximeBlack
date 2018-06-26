@@ -98,6 +98,13 @@ nav ul
 	height: 400px;
 }
 
+.less_nav_coll 
+{
+	width: 80%;
+	float: right;
+	height: 600px;
+}
+
 .maison
 {
 	width: 40%;
@@ -303,6 +310,11 @@ footer
 .sticky-footer
 {
 	height: 500px;
+}
+
+.sticky-footer-coll
+{
+	height: 700px;
 }
 
 @media(max-width: 900px)

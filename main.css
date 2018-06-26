@@ -121,7 +121,7 @@ nav ul
 {
 	height: 100%;
 	object-fit: cover;
-	animation: anim 10s infinite;
+	animation: anim 5s infinite;
 	margin: 0% auto;
 }
 
@@ -129,7 +129,7 @@ nav ul
 {
 	height: 100%;
 	object-fit: cover;
-	animation: anim 10s infinite;
+	animation: anim 5s infinite;
 } 
 
 
@@ -159,13 +159,13 @@ nav ul
 {
 	height: 100%;
 	object-fit: cover;
-	animation: anim 10s infinite;
+	animation: anim 5s infinite;
 }
 
 .univers
 {
 	height: 100%;
-	animation: anim 10s infinite;
+	animation: anim 5s infinite;
 	object-fit: cover;
 }
 

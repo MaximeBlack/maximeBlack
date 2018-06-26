@@ -121,7 +121,6 @@ nav ul
 {
 	height: 100%;
 	object-fit: cover;
-	animation: anim 5s infinite;
 	margin: 0% auto;
 }
 

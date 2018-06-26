@@ -90,7 +90,6 @@
 						    x[slideIndex-1].style.display = "block";
 						}
 
-						var myIndex = 0;
 						carousel();
 
 						function carousel() {
@@ -99,9 +98,9 @@
 						    for (i = 0; i < x.length; i++) {
 						       x[i].style.display = "none";  
 						    }
-						    myIndex++;
-						    if (myIndex > x.length) {myIndex = 1}    
-						    x[myIndex-1].style.display = "block";  
+						    slideIndex++;
+						    if (slideIndex > x.length) {slideIndex = 1}    
+						    x[slideIndex-1].style.display = "block";  
 						    setTimeout(carousel, 4500);    
 						}
 					</script>
